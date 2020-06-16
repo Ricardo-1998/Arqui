@@ -6,9 +6,9 @@ section .text
 
 loopi:	call 	kb
 	cmp 	si,5d 
-	je	    promedio
+	je	promedio
         sub     al, 30h
-	 mov	[300h+si], al 
+	mov	[300h+si], al 
 	inc 	si
 	jmp 	loopi
 
@@ -87,11 +87,11 @@ texto:	mov 	ah, 00h
 	int 	10h
 	ret
 
-kb: 	mov	    ah, 1h
+kb: 	mov	ah, 1h
 	int 	21h
 	ret
 
-w_strng:mov	    ah, 09h
+w_strng:mov	ah, 09h
 	int 	21h
 	ret
 
