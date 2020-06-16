@@ -92,8 +92,8 @@ kb: 	mov	    ah, 1h
 	ret
 
 w_strng:mov	    ah, 09h
-	    int 	21h
-	    ret
+	int 	21h
+	ret
 
 section .data
 
